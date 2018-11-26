@@ -1,0 +1,58 @@
+<!--
+  Generated template for the BeginnerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Beginner</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding> 
+    <div class="action_bar">
+        <button ion-button icon-only round (click) = "profile()">
+          <ion-icon name="person"></ion-icon>
+        </button>
+        <button ion-button icon-only round (click) = "home()">
+          <ion-icon name="home"></ion-icon>
+        </button>
+        <button ion-button icon-only round (click) = "torequests()">
+          <ion-icon name="star"></ion-icon>
+        </button>
+        <!-- <button ion-button icon-only round (click) = "logout()">
+          <ion-icon name="exit"></ion-icon>
+        </button> -->
+      </div>
+  <br>  
+    <ion-list>
+      <ion-item *ngFor="let beginner of Beginners; let i = index  ">
+        <!-- <p>{{i}}</p> -->
+        <div
+          class="main_user"
+          *ngIf="beginner.UserID == currentuid; else: elseBlock"
+        >
+          <h2>{{ beginner.User }}</h2>
+          <p>
+            Points: <strong>{{ beginner.Points }}</strong>
+          </p>
+        </div>
+        <ng-template #elseBlock>
+          <div class="other">
+            <h2>{{ beginner.User }}</h2>
+            <p>
+              Points: <strong>{{ beginner.Points }}</strong>
+            </p>
+          </div></ng-template
+        >
+        <!--
+          <h2>{{ beginner.User }}</h2>
+          <p>
+            Points: <strong>{{ beginner.Points }}</strong>
+          </p>
+        -->
+      </ion-item>
+      <!-- <ion-item>{{username}}</ion-item> -->
+    </ion-list>
+</ion-content>

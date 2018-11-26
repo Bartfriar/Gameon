@@ -1,0 +1,264 @@
+{
+  "Challenges" : {
+    "-LRKGlWmT_Y8wYg-_ikU" : {
+      "Challenger" : "Master",
+      "Challengestate" : "No",
+      "Challengeuid" : "-LRKGlWmT_Y8wYg-_ikU",
+      "Opponent" : "Test"
+    },
+    "-LRKI4bsXaZIIZYcIoXy" : {
+      "Challenger" : "Test",
+      "Challengestate" : "Yes",
+      "Challengeuid" : "-LRKI4bsXaZIIZYcIoXy",
+      "Opponent" : "Master"
+    },
+    "-LRgIIN2LgJ70A8trTsL" : {
+      "Challenger" : "Master",
+      "Challengestate" : "No",
+      "Challengeuid" : "-LRgIIN2LgJ70A8trTsL",
+      "Opponent" : "Test"
+    },
+    "-LRgWL6w9R34wOu4EhXV" : {
+      "Challenger" : "Master",
+      "Challengestate" : "No",
+      "Challengeuid" : "-LRgWL6w9R34wOu4EhXV",
+      "Opponent" : "qwe"
+    },
+    "-LRgWsAto1tihXIANfmM" : {
+      "Challenger" : "Master",
+      "Challengestate" : "No",
+      "Challengeuid" : "-LRgWsAto1tihXIANfmM",
+      "Opponent" : "Mr"
+    },
+    "-LRgYOenR2aCsKiNc5Cq" : {
+      "Challenger" : "Mr",
+      "Challengestate" : "Yes",
+      "Challengeuid" : "-LRgYOenR2aCsKiNc5Cq",
+      "Opponent" : "Master"
+    },
+    "-LRgYWOt1QIXxKL8efaT" : {
+      "Challenger" : "Master",
+      "Challengestate" : "No",
+      "Challengeuid" : "-LRgYWOt1QIXxKL8efaT",
+      "Opponent" : "qwee"
+    },
+    "-LRgYclXqx0ekq0BYLVq" : {
+      "Challenger" : "Mr",
+      "Challengestate" : "No",
+      "Challengeuid" : "-LRgYclXqx0ekq0BYLVq",
+      "Opponent" : "qwee"
+    },
+    "-LRtvvVmHLPZWI4MH0AV" : {
+      "Challenger" : "her",
+      "Challengestate" : "No",
+      "Challengeuid" : "-LRtvvVmHLPZWI4MH0AV",
+      "Opponent" : "mafia"
+    },
+    "-LRtvys4-dsXg4dcVRwX" : {
+      "Challenger" : "her",
+      "Challengestate" : "No",
+      "Challengeuid" : "-LRtvys4-dsXg4dcVRwX",
+      "Opponent" : "John Doee"
+    },
+    "-LRtw-3xmuZWoqPWz7wv" : {
+      "Challenger" : "her",
+      "Challengestate" : "Yes",
+      "Challengeuid" : "-LRtw-3xmuZWoqPWz7wv",
+      "Opponent" : "Master"
+    }
+  },
+  "Games" : {
+    "-LRgYOenR2aCsKiNc5Cq" : {
+      "First_Team" : "Arsenal",
+      "First_Team_Score" : 2,
+      "GameID" : "-LRgYOenR2aCsKiNc5Cq",
+      "Second_Team" : "Tottenham",
+      "Second_Team_Score" : 3,
+      "Second_User" : "Master"
+    },
+    "-LRtw-3xmuZWoqPWz7wv" : {
+      "First_Team" : "Arsenal",
+      "First_Team_Score" : 0,
+      "GameID" : "-LRtw-3xmuZWoqPWz7wv",
+      "Second_Team" : "Tottenham",
+      "Second_Team_Score" : 3,
+      "Second_User" : "Master"
+    }
+  },
+  "LeaderBoards" : {
+    "C9kWN5Faq9cdUzCdKjGcqU042Te2" : {
+      "Losses" : 0,
+      "Points" : 0,
+      "Rank" : "Beginner",
+      "User" : "rest",
+      "Wins" : 0
+    },
+    "GW0b7RYX2gcy5VcpodQ7bCT7WPz1" : {
+      "Losses" : 0,
+      "Points" : 0,
+      "Rank" : "Beginner",
+      "User" : "mafia",
+      "Wins" : 0
+    },
+    "KMXdTBU1DRfvxSFAaY9JfRRCJ342" : {
+      "Losses" : 0,
+      "Points" : 0,
+      "Rank" : "Beginner",
+      "User" : "her",
+      "Wins" : 0
+    },
+    "ZNzNj3TpQSUVeqBjR5NBUHNApXg1" : {
+      "Losses" : 0,
+      "Points" : 1,
+      "Rank" : "Beginner",
+      "User" : "Master",
+      "Wins" : 1
+    },
+    "hemrEov7D8hoMofRuYW7zSQL8lH3" : {
+      "Losses" : 0,
+      "Points" : 0,
+      "Rank" : "Beginner",
+      "User" : "fre",
+      "Wins" : 0
+    },
+    "qkrug7O8gYPLPcKR28u1MYxWPXE3" : {
+      "Losses" : 0,
+      "Points" : 0,
+      "Rank" : "Beginner",
+      "User" : "ask",
+      "Wins" : 0
+    },
+    "y37KlQ36YLOV3fQDC4gy9D7ioUu1" : {
+      "Losses" : 0,
+      "Points" : 0,
+      "Rank" : "Beginner",
+      "User" : "as",
+      "Wins" : 0
+    }
+  },
+  "Teams" : {
+    "arsenal" : {
+      "Logo" : "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png",
+      "Team_Name" : "Arsenal FC"
+    },
+    "barca" : {
+      "Logo" : "http://pngimg.com/uploads/fcb_logo/fcb_logo_PNG25.png",
+      "Team_Name" : "FC Barcelona"
+    },
+    "liver" : {
+      "Logo" : "https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png",
+      "Team_Name" : "Liverpool"
+    },
+    "tote" : {
+      "Logo" : "https://upload.wikimedia.org/wikipedia/hif/6/6d/Tottenham_Hotspur.png",
+      "Team_Name" : "Tottenham"
+    }
+  },
+  "users" : {
+    "BZhktaMLpvcsOff0D6NhphRc4D02" : {
+      "Team" : {
+        "formation" : "4-3-3",
+        "logo" : "https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png",
+        "team" : "Liverpool "
+      },
+      "UserID" : "BZhktaMLpvcsOff0D6NhphRc4D02",
+      "email" : "w@b.com",
+      "username" : "Test"
+    },
+    "C9kWN5Faq9cdUzCdKjGcqU042Te2" : {
+      "Team" : {
+        "formation" : "3-5-2",
+        "logo" : "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png",
+        "team" : "Arsenal FC"
+      },
+      "Telephone" : "0856123",
+      "UserID" : "C9kWN5Faq9cdUzCdKjGcqU042Te2",
+      "email" : "r@e.com",
+      "username" : "rest"
+    },
+    "GW0b7RYX2gcy5VcpodQ7bCT7WPz1" : {
+      "Team" : {
+        "formation" : "5-4-1",
+        "logo" : "https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png",
+        "team" : "Liverpool"
+      },
+      "Telephone" : "074562355",
+      "UserID" : "GW0b7RYX2gcy5VcpodQ7bCT7WPz1",
+      "email" : "m@f.com",
+      "username" : "mafia"
+    },
+    "IJavXB1ybMWlIUO06Omdjn64Tyb2" : {
+      "Team" : {
+        "formation" : "4-2-3-1",
+        "logo" : "https://upload.wikimedia.org/wikipedia/hif/6/6d/Tottenham_Hotspur.png",
+        "team" : "Tottenham"
+      },
+      "UserID" : "IJavXB1ybMWlIUO06Omdjn64Tyb2",
+      "email" : "c@b.com",
+      "username" : "John Doee"
+    },
+    "KMXdTBU1DRfvxSFAaY9JfRRCJ342" : {
+      "Team" : {
+        "formation" : "4-2-3-1",
+        "logo" : "https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png",
+        "team" : "Liverpool"
+      },
+      "Telephone" : "02454512",
+      "UserID" : "KMXdTBU1DRfvxSFAaY9JfRRCJ342",
+      "email" : "h@er.com",
+      "username" : "her"
+    },
+    "MbQ3PYHhITVH0BJzMY0dfhFhRsG2" : {
+      "Team" : {
+        "formation" : "4-3-3",
+        "logo" : "https://upload.wikimedia.org/wikipedia/hif/b/bd/Liverpool_FC.png",
+        "team" : "Liverpool"
+      },
+      "UserID" : "MbQ3PYHhITVH0BJzMY0dfhFhRsG2",
+      "email" : "w@f.com",
+      "username" : "qwee"
+    },
+    "MrEky69qVeamIjqWumOk4PjVVbT2" : {
+      "Team" : {
+        "formation" : "3-5-2",
+        "logo" : "https://upload.wikimedia.org/wikipedia/hif/6/6d/Tottenham_Hotspur.png",
+        "team" : "Tottenham"
+      },
+      "UserID" : "MrEky69qVeamIjqWumOk4PjVVbT2",
+      "email" : "e@b.com",
+      "username" : "qwe"
+    },
+    "ZNzNj3TpQSUVeqBjR5NBUHNApXg1" : {
+      "Team" : {
+        "formation" : "4-2-3-1",
+        "logo" : "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png",
+        "team" : "Arsenal FC"
+      },
+      "Telephone" : "0723122122",
+      "UserID" : "ZNzNj3TpQSUVeqBjR5NBUHNApXg1",
+      "email" : "test@gmail.com",
+      "username" : "Master"
+    },
+    "qkrug7O8gYPLPcKR28u1MYxWPXE3" : {
+      "Team" : {
+        "formation" : "3-5-2",
+        "logo" : "https://upload.wikimedia.org/wikipedia/hif/6/6d/Tottenham_Hotspur.png",
+        "team" : "Tottenham"
+      },
+      "Telephone" : "071555333",
+      "UserID" : "qkrug7O8gYPLPcKR28u1MYxWPXE3",
+      "email" : "a@sk.com",
+      "username" : "ask"
+    },
+    "uJuv1YLJiMPlvRQmD9JOE61WwP22" : {
+      "Team" : {
+        "formation" : "4-3-3",
+        "logo" : "https://upload.wikimedia.org/wikipedia/hif/6/6d/Tottenham_Hotspur.png",
+        "team" : "Tottenham"
+      },
+      "UserID" : "uJuv1YLJiMPlvRQmD9JOE61WwP22",
+      "email" : "q@b.com",
+      "username" : "Mr"
+    }
+  }
+}

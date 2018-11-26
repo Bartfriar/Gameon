@@ -1,0 +1,59 @@
+page-home {
+  .button-md
+  {
+    background-color: #22e266;
+  }
+    .card-background-page 
+    {
+
+        ion-card {
+          position: relative;
+          text-align: center;
+          background-color: #fadead;
+        }
+      
+        .card-title {
+          position: absolute;
+          top: 36%;
+          font-size: 2.0em;
+          width: 100%;
+          font-weight: bold;
+          color: #fff;
+        }
+      
+        .card-subtitle 
+        {
+          font-size: 1.0em;
+          position: absolute;
+          top: 52%;
+          width: 100%;
+          color: #fff;
+        }
+      
+      }
+      ion-slides{
+          height: 100%;
+      }
+      .action_bar
+      {
+        align-content: center;
+		    display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      .swiper-slide img{
+        margin-top: 10%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        border-radius: 8%;
+      }
+      .userppic{
+        
+        margin-left: 35%;
+      }
+      .teamlogo {
+        margin-left: 40%;
+
+      }
+}

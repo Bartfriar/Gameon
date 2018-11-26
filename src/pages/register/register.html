@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list inset>
+    <ion-item>
+      <ion-label>First Name</ion-label>
+      <ion-input type = "text" [(ngModel)] = "firstname" name = "fname" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Last Name</ion-label>
+      <ion-input type = "text" [(ngModel)]= "lastname" name = "lname" ></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input type = "text" [(ngModel)]="username" name = "username" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type = "text" [(ngModel)]="a" name="Email"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+        <ion-label>Telephone</ion-label>
+        <ion-input type = "number" [(ngModel)]="Tel" name="Phone"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type = "password" [(ngModel)]="b" name="Password"></ion-input>
+    </ion-item>
+  
+    <button ion-button block (click)="register()">Register</button>
+  </ion-list>
+</ion-content>
+<ion-footer tapabble (click) = "gotoLoginPage()">
+  <ion-item text-center>
+    Log In!
+  </ion-item>
+</ion-footer>

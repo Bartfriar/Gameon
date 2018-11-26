@@ -1,0 +1,20 @@
+page-amateur {
+    .action_bar
+    {
+      align-content: center;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    .main_user {
+        background-color: rgb(167, 172, 240);
+        padding: 6px;
+        border-radius: 5%;
+        h2 {
+          font-size: 30px;
+        }
+      }
+    
+      .other {
+      }
+}

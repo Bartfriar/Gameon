@@ -1,0 +1,31 @@
+<!--
+  Generated template for the UserprofilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{username}}'s Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-badge color = "Secondary" style = "margin-left:40%;">{{rank}}: {{points}}</ion-badge> 
+  <img src = "assets/fifamatch.png"/>
+  <button ion-button round style = "margin-left:30%">Challenge</button>
+  <ion-label>First Name</ion-label> <ion-input placeholder = "{{firstname}}"></ion-input>
+  <ion-label>Last Name</ion-label> <ion-input placeholder = "{{lastname}}"></ion-input>
+  <ion-label>Username</ion-label> <ion-input placeholder = "{{username}}"></ion-input>
+  <ion-label>Email</ion-label> <ion-input placeholder = "{{useremail}}"></ion-input>
+  <ion-label>Telephone</ion-label> <ion-input placeholder = "{{phone}}"></ion-input>
+  <ion-label>Team: </ion-label> <ion-input placeholder = "{{team}}"></ion-input>
+  <ion-label>Formation: </ion-label> <ion-input placeholder = "{{formations}}"></ion-input>
+  <ion-label>Games Played</ion-label> <ion-input placeholder = "{{Games_Played}}"></ion-input>
+  <ion-label>Won Games</ion-label> <ion-input placeholder = "{{Won_Games}}"></ion-input>
+  <ion-label>Lost Games</ion-label> <ion-input placeholder = "{{Lost_Games}}"></ion-input>
+  <!-- <ion-label>Rank:</ion-label> <ion-input placeholder="{{rank}}"></ion-input> -->
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>TeamDetails</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+    <ion-list>
+        <ion-list-header>
+          Clubs
+        </ion-list-header>
+        <button ion-item *ngFor="let teams of team" (click)="format(teams)">
+          <ion-avatar item-start>
+            <img [src]="teams.Logo">
+          </ion-avatar>
+          <p>{{ teams.Team_Name }}</p>
+        </button>
+      </ion-list>
+
+</ion-content>
