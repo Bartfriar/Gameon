@@ -12,7 +12,8 @@
   </ion-navbar>
 
 </ion-header>
-<ion-content padding> <div class="action_bar">
+<ion-content padding> 
+  <div class="action_bar">
     <button ion-button icon-only round (click) = "profile()">
       <ion-icon name="person"></ion-icon>
     </button>
@@ -26,9 +27,9 @@
       <ion-icon name="exit"></ion-icon>
     </button> -->
   </div>
-  <ion-slides >
+  <!-- <ion-slides >
     <ion-slide *ngFor="let Challenge of Challenges">
-          <ion-card *ngIf ="Challenge.Opponent == currentuser" >
+          <ion-card >
               <img src="assets/fifamatch.png"/><br>
               <h1>{{ Challenge.Challenger }}</h1>
               <img src="{{ teamlogo }}" alt="Arsenal logo">
@@ -37,9 +38,24 @@
               <div>
                 <button ion-button round>More info</button>
               </div>
-              <button ion-button round (click)="accept(Challenge)">Accept</button>
+              <ion-item *ngIf = " challengerteam !== 'Liverpool'">
+              <button ion-button round (click)="accept(Challenge)" >Accept</button>
+              
               <button ion-button round (click)="decline(Challenge)">Decline</button>
+            </ion-item>
             </ion-card>
     </ion-slide>
-  </ion-slides>
+  </ion-slides> -->
+  <ion-grid>
+    <ion-list *ngFor="let Challenge of Challenges">
+      <ion-row>
+          <ion-col>
+            <p>{{Challenge.Challenger}}</p>
+          </ion-col>
+          <ion-col col-4 >
+              <button ion-button round (click)="view(Challenge)" >View</button>
+              </ion-col>
+      </ion-row>
+    </ion-list>
+  </ion-grid>
 </ion-content>

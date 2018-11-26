@@ -11,6 +11,7 @@ import { filter } from "rxjs/operators";
 import { mapTo } from "rxjs/operators";
 import { HomePage } from "../home/home";
 import { AboutPage } from "../about/about";
+import { ViewrequestPage } from "../viewrequest/viewrequest";
 
 /**
  * Generated class for the RequestsPage page.
@@ -38,6 +39,7 @@ export class RequestsPage {
   challengerform: string;
   challengerid: string;
   filteredteam: any;
+  state:any;
   filters = {};
   constructor(
     public navCtrl: NavController,
@@ -67,24 +69,29 @@ export class RequestsPage {
       .subscribe((Challenge: any) => {
         this.Challenges = Challenge;
         console.log(this.Challenges);
-        this.applyfilters();
       });
 
-    var filterchallenges = firebase
-      .database()
-      .ref("Challenges")
-      .orderByChild("Opponent")
-      .equalTo(this.currentuser);
+   
     firebase
       .database()
       .ref(`Challenges`)
       .orderByChild("Opponent")
       .equalTo(this.currentuser)
       .on("child_added", player2 => {
-        this.currentname = player2.val().Challenger;
+        this.currentname = player2.val().Challenger;//Person that challenged you
         this.challengerid = player2.val().Challengeuid;
 
-        console.log(this.currentname);
+        console.log(`Current value: ${this.currentname}`);
+        // console.log(this.currentname);
+        firebase
+        .database()
+        .ref("Challenges")
+        .orderByChild("Challenger")
+        .equalTo(this.currentname).on("child_added", what=>{
+          this.state = what.val().Challengestate
+          console.log(`Current state: ${this.state}`)
+        });
+
 
         firebase
           .database()
@@ -99,19 +106,11 @@ export class RequestsPage {
           });
       });
   }
-  private getoppo() {
-    this.filters = firebase
-      .database()
-      .ref("Challenges")
-      .orderByChild("Oppponent")
-      .equalTo(this.currentuser);
-    this.applyfilters();
-    console.log(this.filters);
-  }
-  private applyfilters() {
-    this.filteredteam = _.filter(this.Challenges, _.conforms(this.filters));
-    console.log(this.filteredteam);
-  }
+ view(opponent)
+ {
+   this.navCtrl.push(ViewrequestPage,{Opponent_name: opponent.Challenger})
+
+ }
   accept(opponent) {
     firebase
       .database()

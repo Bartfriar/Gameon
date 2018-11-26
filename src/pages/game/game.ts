@@ -81,5 +81,8 @@ export class GamePage {
       First_User:this.currentuser,
       First_Team:team_name,
     });
+    firebase.database().ref(`Challenges/${this.challengekey}`).update({
+      Challengestate: "Playing"
+    })
   }
 }

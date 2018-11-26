@@ -33,6 +33,7 @@ import { MatchPage } from "../pages/match/match";
 import { ResultsPage } from "../pages/results/results";
 import { BeginnerPage } from "../pages/beginner/beginner";
 import { UserprofilePage } from "../pages/userprofile/userprofile";
+import { ViewrequestPage } from "../pages/viewrequest/viewrequest";
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { UserprofilePage } from "../pages/userprofile/userprofile";
     MatchPage,
     ResultsPage,
     BeginnerPage,
-    UserprofilePage
+    UserprofilePage,
+    ViewrequestPage
   ],
   imports: [
     BrowserModule,
@@ -87,7 +89,8 @@ import { UserprofilePage } from "../pages/userprofile/userprofile";
     MatchPage,
     ResultsPage,
     BeginnerPage,
-    UserprofilePage
+    UserprofilePage,
+    ViewrequestPage
   ],
   providers: [
     StatusBar,

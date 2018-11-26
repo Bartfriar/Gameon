@@ -1,0 +1,38 @@
+<!--
+  Generated template for the ViewrequestPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>viewrequest</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-slides >
+    <ion-slide *ngFor="let userdet of users">
+          <ion-card >
+              <img src="assets/fifamatch.png"/><br>
+              <h1>{{ userdet.username }}</h1>
+              <img src="{{ userdet.Team.logo }}" alt="Arsenal logo">
+              <h2>{{ userdet.Team.team}}</h2><br>
+              <p>Formation:{{userdet.Team.formation}}</p>
+              <div>
+                <button ion-button round>More info</button>
+              </div>
+              <div class = "response">
+              <ion-item [ngClass] = "{'hide': hide}">
+              <button ion-button round (click)="accept(userdet)" >Accept</button>
+              
+              <button ion-button round (click)="decline(userdet)">Decline</button>
+            </ion-item>
+            </div>
+            </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
