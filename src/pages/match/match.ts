@@ -38,6 +38,7 @@ export class MatchPage {
   });
   this.username = navparams.get("opponent_name"),
   this.gameid = navparams.get('challenger_id')
+  console.log(`Opponent ${this.username}`)
       console.log(this.username);
       this.useremail = this.afAuth.auth.currentUser.email;
     firebase.database().ref("users").orderByChild("email").equalTo(this.useremail).on("child_added", usern=>{

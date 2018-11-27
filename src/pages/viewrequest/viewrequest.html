@@ -23,7 +23,7 @@
               <h2>{{ userdet.Team.team}}</h2><br>
               <p>Formation:{{userdet.Team.formation}}</p>
               <div>
-                <button ion-button round>More info</button>
+                <button ion-button round (click) = "more(userdet)">More info</button>
               </div>
               <div class = "response">
               <ion-item [ngClass] = "{'hide': hide}">

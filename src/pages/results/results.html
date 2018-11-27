@@ -14,12 +14,23 @@
 
 
 <ion-content padding>
-  <ion-card >
-    <h1>{{Result}}</h1>
-  <div>
-    <ion-label>{{Displayname}}'s {{Displayteam}}</ion-label>
-    <ion-label>Score: {{DisplayScore}}</ion-label>
-  </div>
-  </ion-card>
+    <div >
+       <ion-card class = "winner" *ngIf = "Result == 'Winner'">
+         <h1>{{Result}}</h1>
+         <h3> {{Displayname}}</h3>
+           <ion-label> {{Displayteam}} vs {{Secondteam}}</ion-label>
+           <p> {{DisplayScore}} : {{Secondteamscore}}</p> 
+           <ion-label>Points : {{Points}} (Gained 3 Points)</ion-label>   
+       </ion-card>
+     </div>
+     <div >
+        <ion-card class = "loser" *ngIf = "Result == 'Loser'">
+            <h1>{{Result}}</h1>
+            <h3> {{Displayname}}</h3>
+              <ion-label> {{Displayteam}} vs {{Secondteam}}</ion-label>
+              <p>{{DisplayScore}} : {{Secondteamscore}}</p> 
+              <ion-label>Points : {{Points}} (Lost 2 Points)</ion-label>  
+          </ion-card>
+      </div>
 <button ion-button (click)="rank()">See Rank</button>
 </ion-content>

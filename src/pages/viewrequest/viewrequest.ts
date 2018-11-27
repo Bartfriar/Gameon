@@ -6,6 +6,8 @@ import { MatchPage } from '../match/match';
 import { HomePage } from '../home/home';
 import { AboutPage } from '../about/about';
 import { AngularFireAuth } from '@angular/fire/auth';
+import { UserprofilePage } from '../userprofile/userprofile';
+import { RequestsPage } from '../requests/requests';
 
 /**
  * Generated class for the ViewrequestPage page.
@@ -85,18 +87,27 @@ export class ViewrequestPage {
         Challengestate: "Yes"
       });
     this.navCtrl.push(MatchPage, {
-      opponent_name: opponent.Opponent,
+      opponent_name: opponent.username,
       challenger_id: this.challengerid
     });
   }
-  decline(opponent) {}
+  decline(opponent) 
+  {
+    firebase.database().ref(`Challenges/${this.challengerid}`).remove()
+    var toast = this.toastCtrl.create({
+      message: "You have DECLINED the challenge",
+      duration: 2000
+    });
+    toast.present()
+    this.navCtrl.setRoot(RequestsPage)
+  }
   home()
   {
     this.navCtrl.setRoot(HomePage)
   }
-  profile()
+  more(opponent)
   {
-    this.navCtrl.setRoot(AboutPage)
+    this.navCtrl.push(UserprofilePage, { opponent_name: opponent.username, opponent_uid: opponent.UserID });
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad ViewrequestPage');

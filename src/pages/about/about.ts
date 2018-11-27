@@ -7,6 +7,8 @@ import * as firebase from 'firebase';
 import { BeginnerPage } from '../beginner/beginner';
 import { AmateurPage } from '../amateur/amateur';
 import { ProfessionalPage } from '../professional/professional';
+import { HomePage } from '../home/home';
+import { RequestsPage } from '../requests/requests';
 
 
 @Component({
@@ -73,6 +75,20 @@ export class AboutPage {
       default:
         break;
     }
+  }
+  home()
+  {
+    this.navCtrl.setRoot(HomePage)
+  }
+  
+  profile()
+  {
+    this.navCtrl.setRoot(AboutPage)
+  }
+
+  torequests()
+  {
+    this.navCtrl.setRoot(RequestsPage) 
   }
   ionViewDidLoad() {
    

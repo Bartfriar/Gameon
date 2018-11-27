@@ -34,6 +34,8 @@ export class ResultsPage {
   Displayname: any;
   Displayteam: any;
   DisplayScore: any;
+  Secondteam:any;
+  Secondteamscore:any;
   useremail: any;
   userid: any;
   Won_game: number = 0;
@@ -79,6 +81,8 @@ export class ResultsPage {
           this.Displayname = this.Firstuser;
           this.DisplayScore = this.FTeam_Score;
           this.Displayteam = this.FTeam;
+          this.Secondteam = this.STeam;
+          this.Secondteamscore = this.STeam_Score;
           console.log(this.Displayname);
           firebase
             .database()
@@ -193,6 +197,8 @@ export class ResultsPage {
           this.Displayname = this.Seconduser;
           this.DisplayScore = this.STeam_Score;
           this.Displayteam = this.STeam;
+          this.Secondteam = this.FTeam;
+          this.Secondteamscore = this.FTeam_Score;
           firebase
             .database()
             .ref("LeaderBoards")

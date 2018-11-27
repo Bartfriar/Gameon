@@ -7,7 +7,22 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-badge color="Secondary" style="margin-left:35%;" (click) = "ranks()" >{{rank}}: {{points}}</ion-badge> 
+    <div class="action_bar">
+        <button ion-button icon-only round (click) = "profile()">
+          <ion-icon name="person"></ion-icon>
+        </button>
+        <button ion-button icon-only round (click) = "home()">
+          <ion-icon name="home"></ion-icon>
+        </button>
+        <button ion-button icon-only round (click) = "torequests()">
+          <ion-icon name="star"></ion-icon>
+        </button>
+        <!-- <button ion-button icon-only round (click) = "logout()">
+          <ion-icon name="exit"></ion-icon>
+        </button> -->
+      </div>
+      <br>
+  <ion-badge color="Secondary" style="margin-left:35%;" (click) = "ranks()" >{{rank}}: {{points}} points</ion-badge> 
   <img src="assets/fifamatch.png"/>
   <ion-label>First Name</ion-label> <ion-input placeholder="{{firstname}}"></ion-input>
   <ion-label>Last Name</ion-label> <ion-input placeholder="{{lastname}}"></ion-input>
